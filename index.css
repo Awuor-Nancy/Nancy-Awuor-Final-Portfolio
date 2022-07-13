@@ -12,6 +12,7 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	
 }
 
 main{
@@ -109,14 +110,16 @@ a.nav-link{
     color: var(--main-fonts-color);
 	z-index: 1;
 	margin: auto;
-	padding: 20px;
+	padding: 30px;
+	
 }
 
 .intro  p{
-    margin: 5px;
+    margin: auto;
 	font-size:1.2rem;
 	font-family: var(--main-font-family);
 	text-align:center;
+	padding-top: 10px;
 }
 
  h3{
@@ -283,7 +286,7 @@ footer {
 hr {
     background: var(--main-decor-color);
 	margin: 2px;
-	height: 3px;
+	height: 10px;
 	width: 150px;
     border-radius:5px;
 	border: hidden;
