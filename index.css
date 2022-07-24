@@ -15,6 +15,11 @@
 	
 }
 
+body{
+	scroll-behavior: smooth;
+	
+}
+
 main{
 	padding: 0;
 	width: 100%;
@@ -58,6 +63,7 @@ header:hover{
 	list-style:none;
 	position: relative;
 	display: inline-flex;
+	margin: 30px;
 }
 
 a.nav-link{
@@ -109,8 +115,8 @@ a.nav-link{
 	text-align:center;
     color: var(--main-fonts-color);
 	z-index: 1;
-	margin: auto;
-	padding: 30px;
+	/* margin: auto; */
+	margin-top: 150px;
 	
 }
 
@@ -139,6 +145,7 @@ a.nav-link{
 
 .social-media{
 	padding: 10px;
+	margin-top: 40px;
 	display: flex;
 	position: center;
     align-items: space-around;
