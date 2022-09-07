@@ -225,9 +225,10 @@ a.nav-link{
 
 .intro {
 	text-align:center;
-    /* color: var(--main-fonts-color); */
+    color: var(--main-fonts-color);
 	z-index: 1;
-	margin-top: 190px;
+	color: #fff;
+	margin-top: 10px;
 	
 }
 
@@ -292,14 +293,16 @@ a.nav-link{
 	align-items: center;
     justify-content: center;
 	text-align:center;
-	color: var(--main-fonts-color);
+	color: #fff;
+	/* color: var(--main-fonts-color); */
 }
 #projects h3{
     padding-top: 2px;
 }
 #projects p{
-	font-family: var(--main-font-family);
+	/* font-family: var(--main-font-family); */
 	font-size:1.2rem;
+	color: #fff;
 	padding: 10px;
 }
 
@@ -319,7 +322,7 @@ a.nav-link{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-    /* background:var(--main-decor-color); */
+    background:var(--main-decor-color);
 }
 
 .card img{
