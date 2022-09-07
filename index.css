@@ -2,9 +2,9 @@
 
 :root{
 	--main-background: #0b0c0f;
-	--main-fonts-color: #fff;
-	--main-decor-color:#00a9e2;
-    --main-header-background:#21252e;
+	--main-fonts-color: #00a9e2;
+	/* --main-decor-color:#00a9e2; */
+    --main-header-background:#21252e; 
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -53,10 +53,18 @@ header:hover{
 	background: var(--main-header-background);
 }
 
-.logo img{
-	padding-top: 5px;
-	height: 50px;
+.logo{
+	padding: 15px;
 	cursor: pointer;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	color: #00a9e2;
+	margin-top: 1000px;
+	font-weight: bolder;
+	margin-right: 150px;
+	
+
 }
 
 .nav-bar{
@@ -78,6 +86,7 @@ a.nav-link{
 
 .active{
 	background: var(--main-decor-color);
+	
 }
 
 .nav-link:hover {
@@ -89,17 +98,10 @@ a.nav-link{
        home
 ──────────────────*/
 
-#home{ 	
-	margin: auto;
-	height: 100vh;
-	color: var(--main-fonts-color);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+.container .home {
+    height: 100vh;
 }
-
-#home .filter{
+#Home .filter{
 	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
 	background-size: cover;
 	background-position:center;
@@ -109,14 +111,123 @@ a.nav-link{
     left: 0;
     right: 0;
 	opacity:.20;
-}  
+} 
+
+.container-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.container section.home {
+    margin: 0;
+    padding: 0;
+}
+
+.container-home .home-wrap {
+    padding-left: 7rem;
+    height: 60vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.home-wrap p {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.home-wrap h2 {
+    font-size: 5.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-wrap h2 span {
+    font-size: 4.6rem;
+    color: #fff;
+    text-shadow: initial;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.home-wrap .textition-animation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.6rem;
+}
+
+.home-wrap .textition-animation p {
+    color: #fff;
+    cursor: pointer;
+    padding-right: 1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.textition-animation #textition-text {
+    width: 440px;
+}
+
+.home-wrap .btn-wrap {
+    margin-top: 3.4rem;
+}
+
+.lightbox-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.6); */
+    display: none;
+    z-index: 9;
+}
+
+.lightbox-shadow.show-shadow {
+    display: block;
+}
+
+/* 
+#home{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+  */
 
 .intro {
 	text-align:center;
-    color: var(--main-fonts-color);
+    /* color: var(--main-fonts-color); */
 	z-index: 1;
-	/* margin: auto; */
-	margin-top: 150px;
+	margin-top: 190px;
 	
 }
 
@@ -174,7 +285,7 @@ a.nav-link{
 ──────────────────*/
 
 #projects{
-	margin-top:100px;
+	margin-top:50px;
     height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -184,7 +295,7 @@ a.nav-link{
 	color: var(--main-fonts-color);
 }
 #projects h3{
-    padding-top: 70px;
+    padding-top: 2px;
 }
 #projects p{
 	font-family: var(--main-font-family);
@@ -208,7 +319,7 @@ a.nav-link{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-    background:var(--main-decor-color);
+    /* background:var(--main-decor-color); */
 }
 
 .card img{
@@ -244,8 +355,8 @@ a.nav-link{
 
 #contact{
 	margin: auto;
-	padding-bottom: 20px;
-	height: 600px;
+	padding-bottom: 10px;
+	height: 350px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -323,6 +434,7 @@ hr {
 ──────────────────*/
 .hamburger {
 	display: none;
+	
 }
 
 .hamburger div{
@@ -331,6 +443,7 @@ hr {
 	background: #dbdbdb;
 	margin: 5px;
 	transition:all 0.3s ease;
+	
 }
 
 .toggle .line1{
